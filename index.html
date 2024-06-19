@@ -150,8 +150,55 @@ footer{
   height: 50vh;
   height: calc(var(--vh, 1vh) * 50);
 }
-        @media (min-width: 30em) and (max-width: 50em) {
-            @media screen and (min-width: 30em) and (orientation: landscape) {
+       @media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    .hero {
+        padding: 40px 20px;
+    }
+    .hero h1 {
+        font-size: 36px;
+    }
+    .hero p {
+        font-size: 18px;
+    }
+    .books {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 24px;
+    }
+    .hero p {
+        font-size: 16px;
+    }
+    .books {
+        grid-template-columns: 1fr;
+    }
+    .search input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .search button {
+        position: static;
+        width: 100%;
+    }
+}
+
+
     </style>
 </head>
 <body>
@@ -234,7 +281,7 @@ footer{
                     <img src="eng8.jpg"style="width:1265px;height:450px;">
                     <h3>Cambridge Lower Secondary English</h3>
                     <p>Year 8 english</p>
-                     <p>#25,000</p>
+                     <p>#27,000</p>
                     <p><a href="y8english.html">Buy now!</a></p>
                 </div>
 
@@ -242,7 +289,7 @@ footer{
                     <img src="y8m.jpg">
                     <h3>Cambridge Lower Secondary Mathematics</h3>
                     <p>Year 8 Mathematics</p>
-                     <p>#25,000</p>
+                     <p>#27,000</p>
                     <p><a href="8math.html">Buy now!</a></p>
                 </div>
 
@@ -250,7 +297,7 @@ footer{
                     <img src="y8s.jpg" style="width:1265px;height:450px;">
                     <h3>Cambridge Lower Secondary Science</h3>
                     <p>Year 8 Science</p>
-                     <p>#25,000</p>
+                     <p>#27,000</p>
                     <p><a href="year8sci.html">Buy now!</a></p>
                 </div>
 
@@ -258,7 +305,7 @@ footer{
                     <img src="y8g.jpg" style="width:1265px;height:450px;">
                     <h3>Geography for Key Stage 3</h3>
                     <p>Year 8 Geography</p>
-                    <p>#25,000</p>
+                    <p>#27,000</p>
                     <p><a href="year8geo.html">Buy now!</a></p>
                 </div>
 
@@ -266,7 +313,7 @@ footer{
                     <img src="y8i.jpg" style="width:1265px;height:450px;">
                     <h3>Computing for Key Stage 3</h3>
                     <p>Year 8 Computing</p>
-                    <p>#25,000</p>
+                    <p>#27,000</p>
                     <p><a href="year8ic.html">Buy now!</a></p>
                 </div>
 
@@ -274,7 +321,7 @@ footer{
                     <img src="italian.jpg">
                     <h3>Progetto Italian for English Speakers</h3>
                     <p>Italian </p>
-                    <p>#25,000</p>
+                    <p>#27,000</p>
                     <p><a href="year8ital.html">Buy now!</a></p>
                 </div>
 
