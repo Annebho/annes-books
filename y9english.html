@@ -1,126 +1,186 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Anne's Bookstore</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anne's Bookstore</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="in-30-layout.css" rel="stylesheet" type="text/css">
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: black;
+            color: #fff;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .logo a {
+            color: #fff;
+            text-decoration: none;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+        }
+        nav ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        nav ul li {
+            margin-left: 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            transition: 0.4s ease;
+        }
+        nav ul li a:hover {
+            color: #8D7FEE;
+        }
+        .g {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 400px;
+            border-color: black;
+        }
+        .g img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        h2 {
+            text-align: center;
+            margin: 20px 0;
+            position: relative;
+        }
+        h3 {
+            text-align:center;
+            margin: 20px 0;
+            position:relative;
+        }
+        .ca {
+            width: auto;
+            margin: 20px;
+            text-align: justify;
+            color: #333;
+        }
+        .b {
+            background-color: black;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            margin: 20px auto;
+            cursor: pointer;
+            display: block;
+            width: fit-content;
+        }
+        .b a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                padding: 10px 20px;
+            }
+            .logo {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                margin-left: 0;
+                margin-bottom: 10px;
+            }
+            .ca {
+                margin-right: 0;
+                margin-top: 20px;
+            }
+            .b {
+                left: 0;
+                position: relative;
+                margin-top: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 10px;
+            }
+            nav ul li a {
+                font-size: 14px;
+            }
+            .logo {
+                font-size: 18px;
+            }
+            h2 {
+                font-size: 18px;
+                left: 0;
+            }
+            .ca {
+                margin: 10px;
+            }
+        }
+    </style>
 </head>
 <body>
 
 <header>
     <div class="logo">
-        <a href="">ANNE'S BOOKSTORE</a>
-  </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Books</a></li>
-                <li><a href="https://www.iislagos.com/">About us</a></li>
-                <li><a href="conatct.html">Contact</a></li>
-                <li><a href="">Donate</a></li>
-
-            </ul>
-        </nav>
-  
+        <a href="">ANNE’S BOOKSTORE</a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="index.html">Books</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 </header>
-<style>
-.g {
-  
-  margin:left;
-  float:  left;
-  display:inline-block;
-  display:block;
- width:400px;
- border-color: black;
-}
 
-
-.ca {
-	width:400px;
-	margin:10px;
-	float:right;
-	justify-content:start;
-	margin-right: 350px;
-	margin-top:180px;
-	display:block;
-
-
-}
-
-.b{
-  background-color:black;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 23px;
-  margin: 80px 2px;
-  cursor: pointer;
-  position:relative; left:250px;
-}
-a{
-  color:white;
-}
-header{
-    background-color:black;
-    color:#ffff;
-    padding:20px 60px;
-    display:flex;
-    justify-content: space-between;
-    align-items:center;
-    position:sticky;
-    top:0;
-    z-index:100;
-}
-.logo{
-    font-size:32px;
-    font-weight:bold;
-    text-transform:uppercase;   
-}
-.logo a{
-    color:#fff;
-    text-decoration: none;
-}
-nav{
-    display:flex;
-    align-items:center;
-}
-nav ul{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
-nav ul li{
-    margin-left:25px;
-    list-style:none;    
-}
-nav ul li a{
-    color:#ffff;
-    text-decoration: none;
-    font-size:19px;
-    font-weight:bold;
-    transition:0.4s ease;
-}
-nav ul li a:hover{
-    color:#8D7FEE;
-}
-
-
-</style>
 <div class="g">
-  
-<img src="y9e.jpg" width="455" length="455">
+    <img src="y9e.jpg" alt="Italian Year 9 Textbook">
 </div>
 
-<h2 style="text-align:center-right; position:relative; left:190px;    "    >Buy English Year 9 Textbook </h2>
+<h2>Buy English Year 9 Textbook</h2>
+    <h3>&#x20A6; 30,000</h3>
 
 <div class="ca">
-<p>Introduce your learners to creative writing and writing for a purpose. They’ll write a play scene and an article about a cultural festival, helping build their extended writing skills as they progress through the units. Each unit focuses on a different text type such as dialogue, recounts, reports or instructions. Model texts in each chapter show learners good examples of each writing type and specific activities help them practise grammar typical of the genre. Learners work individually and collaboratively, developing skills such as creative thinking, planning, drafting, peer evaluation and editing.</p></div>
+    <p> Introduce your learners to creative writing and writing for a purpose. They’ll write a play scene and an article about a cultural festival, helping build their extended writing skills as they progress through the units. Each unit focuses on a different text type such as dialogue, recounts, reports or instructions. Model texts in each chapter show learners good examples of each writing type and specific activities help them practise grammar typical of the genre. Learners work individually and collaboratively, developing skills such as creative thinking, planning, drafting, peer evaluation and editing.</p>
+</div>
 
 <div class="b">
-<a href="bought.html">Buy Me!</a>
-
+    <a href="bought.html">Buy English Year 9!</a>
 </div>
 
 </body>
